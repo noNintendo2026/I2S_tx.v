@@ -10,7 +10,7 @@ Esta señal son impulsos los cuales permiten sincronisar la informacion y evitar
 
 la frecuencia de esta señal depende de la frecuencia de muestreo, los canales de audio y la profundidad del audio. 
 
-**F_Muestra\*N\*N_canales**
+**F_Muestra\*N_Bits\*N_canales**
 ---
 ## RLCLOCK
 
@@ -24,4 +24,6 @@ Es la informacion del audio **PCM (Modulación por Código de Pulsos)** que se e
 
 Esta cuarta señal aunque no es nesesaria en todos los casos es la señal con mayor frecuencia siendo dociento cincuenta y seis veces la frecuencia de muestreo y al ser una frecuencia mucho mayor se usa para hacerles modificaciones a la señal de audio
 
-![I2S](Imagenes/i2s.gif)
+<p align="center">
+  <img src="Imagenes/i2s.gif" alt="Animación I2S">
+</p>
