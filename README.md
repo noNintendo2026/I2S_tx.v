@@ -30,6 +30,7 @@ Es la informacion del audio **PCM (Modulación por Código de Pulsos)** que se e
 Es una señal de reloj de alta frecuencia opcional pero requerida por muchos conversores (ADC/DAC) y DSPs para alimentar sus módulos de sobremuestreo (*oversampling*) y filtros digitales internos. Típicamente su frecuencia es $256 \times F_s$ (aunque también puede ser $128 \times F_s$, $384 \times F_s$ o $512 \times F_s$).
 
 <p align="center">
+
   <img src="Imagenes/i2s.gif" alt="Animación I2S">
 </p>
 
@@ -91,3 +92,9 @@ Para archovos de 8 bits hay una excepción ya que direcatemente no se almacenan 
 
 En el protocolo I2S primero se lee la cabecera del archivo WAV, del cual se extra informacion importante como **la frecuencia de muestreo** y **el numero de canales** para posteriormente saltar a la parte de los datos, los cuales estan guardados en orden **little-endian** y codificadas en complemento a dos. 
 Sin embargo el protocolo I2S tranfiere los datos een orden **big endian** por lo que en el momento de cargar los datos se reordenan los bytes
+
+## Diagrama de flujo 
+
+<p align="center">
+  <img src="Imagenes\Diagrama de Flujo-Página-19.drawio.png">
+</p>
