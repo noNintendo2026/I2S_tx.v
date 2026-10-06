@@ -96,5 +96,5 @@ Sin embargo el protocolo I2S tranfiere los datos een orden **big endian** por lo
 ## Diagrama de flujo 
 
 <p align="center">
-  <img src="Imagenes\Diagrama de Flujo.drawio.png">
+  <img src="Imagenes\diagrama de flujo.drawio.png">
 </p>
